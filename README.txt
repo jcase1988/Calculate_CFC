@@ -1,9 +1,3 @@
-1. Running PAC from server
-
-Access my account via:
-
-ssh -p 7777 jcase@dura.cin.ucsf.edu
-
 CFC_wrapper.py
 Directory ~/code/ contains the script “CFC_wrapper.py”. This script takes care of setting up parameters for “calculate_CFC.py” (e.g., which frequencies, bandwidths to use), handles data, and defines the category and comparison arrays.
 
@@ -38,3 +32,8 @@ doCFC_ALL:
 If you would like to run CFC_wrapper more systematically, the bash script “/home/jcase/doCFC_all” will iterate through all subjects, blocks, and electrodes (running 4 CFC_wrapper jobs in parallel, one for each electrode pair). If you would like to adjust the electrodes run, you will need to change the “elec_start” and “elec_end” arrays. If you would like to adjust the subjects and blocks run, change the “subj” and “block” arrays.
 
 If you need to kill this process, try “killall bash” and then “killall python”.
+
+Running PAC from server:
+Access my account via:
+
+ssh -p 7777 jcase@dura.cin.ucsf.edu
